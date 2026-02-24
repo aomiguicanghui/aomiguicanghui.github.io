@@ -1,0 +1,388 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>战斗中的移动</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+</style>
+
+
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+<style>
+@media print
+{
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: auto;
+}
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+</style>
+</head>
+
+<body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(98);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=战斗中的移动.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="双武器攻击.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="非致命攻击.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+ADND2E扩展不全书 &gt; <A href="玩家手册.htm">玩家手册</A> &gt; <A href="第九章：战斗.htm">第九章：战斗</A> &gt; </div>
+	<div id="winchm_template_title">战斗中的移动</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content">
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(128,0,128); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>战斗中的移动（</FONT>Movement in Combat）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><?xml:namespace 
+prefix = "o" ns = "urn:schemas-microsoft-com:office:office" 
+/><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>由于一轮差不多有一分钟那么长，角色理应可以在这一轮的时间内想移动到哪就移动到哪。不管怎么说，奥林匹克级的运动员可以在一分钟内跑过相当长的一段距离。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>然而，</FONT>AD&amp;D游戏中的角色并不是在直线上奔跑的奥林匹克短跑选手</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>；</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>他是在为了活过一场战斗而有计划地移动步伐。他得睁大眼睛提防各种各样的麻烦：小心突袭，提防自己的背后，提防同伴们的背后，还要抓住对手的破绽</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>；同时他还得计划自己的下一步落在哪</FONT>——有时候那意味着踏进痛苦当中。他还有可能背负着沉重的装备，这回显著地减缓他的脚步。而由于所有的这些原因，角色能够移动的距离会比玩家们通常认为的要少得多。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>在一个战斗轮中，一个单位最多可以移动的距离为</FONT>10倍于它</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>移动力</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>（详见第十四章：时间和移动）的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>英尺</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>数。因此，如果角色的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>移动力</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>是</FONT>9，他可以在一轮内移动90</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>英尺</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>不过</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>，角色能够在战斗中使用的移动方式是</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>会受到</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>限制的。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>近战中的移动（</FONT>Movement in Melee）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>最基本的移动形式，就是接近敌人</FONT>——也就是说，移动到离敌人足够近的地方以便发起攻击。这这种移动既不是埋头猛冲，也不是闲庭信步；角色需要迅速而谨慎地靠近。在接近敌人时，角色可以在移动最多相当于他的上限的一半的距离的同时，仍然发起一次近战攻击。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>移动和远程战斗（</FONT>Movement and Missile Combat）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>角色</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>并不是非得要</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>与对手正面对抗；他可以移动到通常</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>移动力</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>一半的距离并以</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>正常</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>射速的一半来进行射击。因此，一个可以移动</FONT>120</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>英尺</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>、手持长弓的人（通常可以每轮射击</FONT>2次）可以移动最多60</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>英尺</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>并射击一次。同一个人在装备重十字弩的情况下（每隔一</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>轮</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>射击一次）需要每</FONT>4</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>轮</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>才能边移动边射击一次。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>发起冲锋（</FONT>Charging an Opponent）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>角色也可以向对手发起冲锋。在冲锋时，角色的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>移动力</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>增加</FONT>50%，并且可以在移动结束时发起一次攻击。冲锋中的角色在攻击检定上获得+2奖励，这主要是来自于动量。有些特殊的武器（比如骑枪）在冲锋时造成掷骰结果两倍的伤害。</SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><BR></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>然而，冲锋也给对手带来若干优势。首先，他们在先攻上获得</FONT>-2奖励。其次，冲锋者失去防御等级上的敏捷奖励，并在AC上受到1点惩罚。最后，当防御者在使用矛或者其他长柄武器，并且准备好对应冲锋的情况下（把尾部顶在石头或者自己的脚上），他在命中时造成2倍伤害。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>撤退（</FONT>Retreat）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>如果角色想退出一场战斗，他们可以选择小心翼翼地后撤，也可以简单地掉头就跑。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>后撤（</FONT>Withdrawing）</SPAN></B><B><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>在进行后撤时，角色小心地后退、远离对手，而后者可以选择跟上去。角色此时只能以平时</FONT>1/3的移动力进行移动。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>如果两个角色在和同一个对手战斗，他们其中一个决定后撤的话，另一个可以阻止敌人的前进。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>在需要将受重伤的人撤出战斗时，这是个有用的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>方</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>法。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>逃离（</FONT>Fleeing）</SPAN></B><B><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>角色也可以逃离战斗，此时他转身并以他的完整的移动力逃跑。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>但此时角色</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>会</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>放下防御，将后背暴露给敌人。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>敌人获得一次免费的攻击</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">——</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>或</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>免费的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>多次攻击，如果该生物每轮可以攻击多次</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">——</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>且能够</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>攻击逃跑的角色的后背。这次攻击是在角色开始逃跑的时候立刻进行的：它不算在对手这一轮的攻击次数之内，和先攻顺序也没有关系。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>敌人可以追赶逃跑的角色，除非有一个盟友挡住敌人的路。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><o:p></o:p></SPAN></P><!--EndFragment--></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2023. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
