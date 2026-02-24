@@ -1,0 +1,924 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>第三章：玩家角色职业</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+</style>
+
+
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+<style>
+@media print
+{
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: auto;
+}
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="其他特征.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="勇士.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+ADND2E扩展不全书 &gt; <A href="玩家手册.htm">玩家手册</A> &gt; </div>
+	<div id="winchm_template_title">第三章：玩家角色职业</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content">
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 15pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>第三章：玩家角色职业（</FONT>Player Character Classes）</SPAN></B><SPAN 
+style="FONT-SIZE: 15pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><?XML:NAMESPACE 
+PREFIX = "O" /><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>在选择完你的角色种族之后，就该是时候选择你的角色职业了。一个角色的职业类似他的专业或事业，它是你的角色在年轻时所从事并受训的东西。比如你想成为一个医生，你不可能一走出大门就立刻开始从事这份工作。首先，你必须得接受一些训练，而在</FONT>AD&amp;D游戏中的角色也不会例外。在你的冒险生涯开始之前，得先假设你的角色曾受过一些训练与指导。而现在，凭借着一些知识，你的角色已经准备好扬名立万了。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>职业根据其综合职能而被分为四个类别：勇士，法师，祭司与游荡者。每个类别中都有一些相似的职业，它们有着相同的生命骰，战斗检定进程（</FONT>Combat 
+Throw Progression）与豁免检定进程（Saving Throw 
+Progression），但它们也有着不同的专属特性和能力。每个玩家必须为他的角色选择一个职业类别，然后再在这个类别中选择具体的职业：</SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>勇士</FONT></SPAN></B><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>战士，游侠，圣武士</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>法师</FONT></SPAN></B><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>巫师，幻术师，其他</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>祭司</FONT></SPAN></B><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>牧师，德鲁伊，其他</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>游荡者</FONT></SPAN></B><B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>盗贼，吟游诗人</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>战士，法师，牧师和盗贼是标准职业。在许多不同的文化的历史或传说中都有他们的原型。因此，他们适合任何种类的</FONT>AD&amp;D战役。所有的其他职业都是可选的，但你的DM可能会判定一个或多个可选职业并不适合他的战役设定，所以在选择一个可选职业前请先咨询你的DM。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>为了帮助你选择你的角色职业，这里将简要介绍每个类别及其所包含的职业。你可在本章节的后面找到相关的详细描述。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>勇士</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>这个类别包含了三个职业，战士，圣武士和游侠。他们都受过良好的武器训练并精通格斗技艺。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>战士</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>可能是斗士，剑客，士兵甚至地痞无赖。他的生死取决于他对武器与战技的了解。你能够在任何对抗怪物与恶徒的前线上找到战士的身影。为了幸存下来，一名战士得拥有强壮而健康的体魄。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>圣武士</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>是纯粹而勇敢的勇士，他们是真与善的完美化身。圣武士和战士一样都是战斗的能手。然而，他们是为了道德，公正，荣誉，虔诚与骑士风度而战的。一名圣武士的不懈努力只为了能够成为人们心中象征美德与荣耀的榜样。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>游侠</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>既是勇士也是守林人。他熟练于运用武器，并在追踪与生存方面博学多闻。游侠经常保护并指引迷路的旅人与淳朴的农夫。行在自然之道上的游侠必须坚韧且睿智，方可抵达圆满之境。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>法师</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>致力于成为魔法能量的掌控者，他们塑造这些魔法能量并将其作为法术施展出来。为了达成这个目标，他学习那些古怪的语言和晦涩的知识，并将他的时间大多贡献给魔法研究。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>一个法师必须依靠他的知识与头脑才能生存下来。因此鲜有法师会不带战士或雇佣兵作为随从而进行冒险。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>魔法有着不同的种类（或学派），所以也有着不同的法师。</FONT></SPAN><I><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>巫师</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>研究所有种类的魔法并学习多种多样的法术。他的博学使他十分适合冒险。法师可以专注于某个特定的法术学派，而在这种情况下专精于幻术的</FONT></SPAN><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>幻术师</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>就是例子。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>祭司</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>照顾着某个群落或地域中的大众精神需求（包括所有的宗教信仰）。</FONT></SPAN><I><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>玩家手册</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>里介绍了两种祭司，牧师与德鲁伊。</FONT>DM也可以创造其他种类的祭司来满足特定战役的需要。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>牧师</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>是倾向于服务社会的（任何宗教中）常见的祭司。他既是保护者也是治疗者。当邪恶降临时，牧师并不会单纯地防守，他们会将其连根拔起。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>德鲁伊</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>是一个可选职业。它是祭司能够适用于某类设定的例子。德鲁伊为了自然与中立而服务。荒野是德鲁伊的领地。他们通过使用自己的特殊能力来保卫原野并维护世界的平衡。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>游荡者</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>的足迹遍布所有人群聚集，商业繁华之地。许多游荡者们都希望能够通过最简单的方式来积聚财富，而另一些则有着更为崇高的目标，他们用自己的能力来纠正不公，传播善意，或者为团队贡献力量。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>游荡者分为两种：盗贼和吟游诗人。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>或善或恶，</FONT></SPAN><I><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>盗贼</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>靠着高超的偷盗技巧来达成目标。诡计多端，机警过人与神出鬼没是他的招牌，而将自己的才能用于对付无辜的路人和富商还是怪物与压迫者，那就是盗贼自己的选择了。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>吟游诗人</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>也是游荡者的一种，但他与盗贼是截然不同的。他的力量是风趣而迷人的特性。再加上他的机智，吟游诗人足以游历世界。一名吟游诗人是天赋异禀的音乐家，他有着说不完的传闻，流言和传说故事。吟游诗人对任何知识都感兴趣，但也算是样样通样样松。大部分吟游诗人都是浪子，他们的故事与歌谣几乎在所有地方都大受欢迎。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>职业属性需求（</FONT>Class Ability Score Requirements）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>每个角色职业都有着不同的最低属性需求。角色在选择特定的职业之前必须先满足这些需求。如果你的角色属性低到不能适用于任何一个职业，那么请求你的</FONT>DM为你重投一项或多项属性来创建一个新角色。如果你想选择某个职业而无法满足其前置要求，你的DM可能允许你提升几项属性来解决问题，不过你还是得事先询问他。同时，在任何情况下也不要期望你的DM会帮你将一项属性提升到16以上。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>以下这些完整的职业介绍给出了你所需的每个职业的具体信息。这些介绍根据不同的职业类别而划分。各职业类别的共通特性将在其开始部分给出，然后再分别解释在这个类别中的每个角色职业。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>你可能并不熟悉描述中所用到的游戏术语，但很多术语都会附上解释（或者你可以在术语表中找到它）。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>经验值</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>衡量了一个角色在其冒险旅程中所学到的知识与所锻炼的能力。角色通过完成冒险与从事与其职业相关的活动来获得经验值。例如，一个战士从战场厮杀中获得更多的经验会比盗贼更多，因为战士的训练注重于战场搏杀，而盗贼则重于隐匿与诡诈。角色在一次又一次的冒险中积累经验。当他们积累到足够的经验时，他们会升到下一级，获得更多的能力与力量。以下经验等级表格列出了各职业升到各级别所需的</FONT></SPAN><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>总</FONT></SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>经验值。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>一些</FONT>DM可能会要求角色在升级之前花费一定的时间或金钱用于训练。当时机到来时，你的DM将告诉你升级的需求。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>等级</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>被用于衡量角色的能力。一个初始角色从</FONT>1级开始游戏。为了升到下一级，角色必须获得足够的经验值。不同的角色有着不同的升级速度。每一次级别上的提升都会提高角色的生存能力与技巧。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>首要属性</FONT></SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>是对于一个职业而言最为重要的一个或多个属性值。例如战士必须强壮而法师必须聪明。所以，对于这两者而言力量与智力就是首要属性。一些职业有不止一个首要属性。</FONT></SPAN><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>任何在</FONT></SPAN></I><B><I><SPAN class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>所有</FONT></SPAN></I></B><I><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>职业关键属性上达到</FONT>16或以上的角色都会获得10%的额外经验加成。</SPAN></I><I><SPAN class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></I></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></I></P>
+<TABLE class=MsoNormalTable 
+style="WIDTH: 304.35pt; BORDER-COLLAPSE: collapse; MARGIN: auto auto auto 4.75pt; mso-padding-alt: 0.0000pt 0.0000pt 0.0000pt 0.0000pt; mso-table-layout-alt: fixed">
+  
+  <TR>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 304.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=405 colSpan=7>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+      class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">表格13：</SPAN></B><B><SPAN 
+      class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">职业属性</SPAN></B><B><SPAN 
+      class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">下限</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">角色职业</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">力量</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">敏捷</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">体质</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">智力</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">灵知</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">魅力</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">战士</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">圣武士</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">12</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">13</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">17</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">游侠</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">13</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">13</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">14</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">14</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">巫师</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">专精法师</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可变</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可变</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可变</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可变</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可变</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可变</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">牧师</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">德鲁伊</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">12</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">15</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">盗贼</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 60.55pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=80>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">吟游诗人</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">12</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">13</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">-</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 40.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=54>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">15</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 304.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=405 colSpan=7>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 0.0000pt">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">可选角色职业，专精法师包括幻术师。</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR></TABLE><!--EndFragment--></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2023. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
