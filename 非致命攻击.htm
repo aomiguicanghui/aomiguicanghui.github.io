@@ -1,0 +1,1284 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>非致命攻击</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+</style>
+
+
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+<style>
+@media print
+{
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: auto;
+}
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="战斗中的移动.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="接触法术与战斗.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+ADND2E扩展不全书 &gt; <A href="玩家手册.htm">玩家手册</A> &gt; <A href="第九章：战斗.htm">第九章：战斗</A> &gt; </div>
+	<div id="winchm_template_title">非致命攻击</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content">
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(128,0,128); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>非致命攻击（</FONT>Attacking without Killing）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><?XML:NAMESPACE 
+PREFIX = "O" /><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>总有些时候，角色会想要击败另一个生物而不杀死它。中了魅惑的队友可能会攻击他的朋友（但他的朋友们可不想为了保护自己而杀掉他！）；某个敌人可能手里握着重要情报，而</FONT>PC们只有制服他才能得到；也可能角色们只是看上了将真正的、活着的怪物带回去的经济</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>价值</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>。无论出于什么理由，角色们迟早都会去尝试这么做的。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>非致命性的攻击有三种：拳打、摔跤和压制。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳打</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>就是最基本的空手格斗。摔跤是传统的擒抱、固定技和摔投的组合。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>压制是通过单纯的体重或数量优势而尝试将对手</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>按倒并压制在地上。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳打和摔跤（</FONT>Punching and Wrestling）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳打和摔跤是最为基础的战斗技巧，几乎所有的孩童都会在扭打成一团、在地上滚来滚去的时候无意识地使用</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>并</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>练习它们。因此所有的角色，</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>无论他</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>是什么职业，都被假</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>设</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>为在某种程度上熟练于这两种战斗方式。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳打就是指角色使用他的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳头进行攻击</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>。角色此时不使用任何武器，尽管他还是可以戴着铁手套或者穿戴类似的物品。而摔跤则要求角色的两只手都是自由的，</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>不受到盾牌之类碍事的东西妨碍</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>当进行拳打或者摔跤的时候，正常进行对抗通常的防御等级的攻击检定。如果角色试图穿着</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>护甲</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>摔跤，则使用表格</FONT>57的调整值（这是对攻击者的攻击检定的</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>惩罚</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>）。通常的攻击检定调整值也适用。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<TABLE class=MsoNormalTable 
+style="WIDTH: 169.8pt; BORDER-COLLAPSE: collapse; MARGIN: auto auto auto 4.65pt; mso-padding-alt: 0.0000pt 0.0000pt 0.0000pt 0.0000pt; mso-table-layout-alt: fixed">
+  
+  <TR>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 169.8pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=226 colSpan=2>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">表格57：</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">摔跤时的</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">护甲</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">调整值</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 112.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=150>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">护甲</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 57.2pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=76>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">调整值</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 112.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=150>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">镶嵌皮甲</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 57.2pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=76>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">-1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 112.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=150>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">链甲，锁环甲，鳞甲</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 57.2pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=76>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">-2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 112.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=150>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">带甲，板条甲，板甲</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 57.2pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=76>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">-5</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 112.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=150>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">野战板甲</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 57.2pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=76>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">-8</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 112.6pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=150>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">全身板甲</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 57.2pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=76>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">-10</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR></TABLE>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>被压制或攻击一个压制自己的对手所导致的攻击惩罚不适用于摔跤。摔跤包含了许多的固定技和关节技，而拳打和摔跤的伤害结算机制已经考虑到了这些因素。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>如果攻击成功命中对手，可以参考表格</FONT>58以查找攻击的结果，用角色修正过的攻击检定结果在表格中找到对应的攻击方式。举例而言，如果角色掷出18并且命中，则结果是一记后颈猛击（如果他进行摔跤攻击，则结果是一记踢击）。拳打和摔跤攻击可以在掷骰结果为1或更少时成功（和通常的规则不同）。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳打结果（</FONT>Punch）</SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：这是命中的那一记击打采取的形式。从游戏效果上说，攻击的形式几乎没有什么影响，但这些招式名字可以作为战斗的佐料，让</FONT>DM描述动作场面的工作变得轻松一点儿。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>伤害（</FONT>Damage）</SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：拳打只造成</FONT>1或2点伤害。金属护手、青铜指虎之类的东西则造成1d3伤害。角色的力量奖励（如果有）会加在拳打伤害上。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拳打伤害和通常的伤害在处理上稍有不同。由拳打造成的伤害只有</FONT>25%是通常伤害，剩下的75%是临时伤害。为方便起见，可以把拳打伤害和其他的伤害分开来记录，并且在战斗全部结束时按照百分比计算并分割伤害。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>如果角色的生命值由于拳打伤害（或由拳打伤害和普通伤害所混合的伤害）而降到</FONT>0，他立刻失去意识。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>角色可以有意识地控制他的拳头，从而完全不造成生命值伤害，只要他在伤害被结算到对手身上之前宣言；这时他依旧有机会</FONT>KO。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">KO率（% 
+KO）</SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：尽管徒手攻击只能造成很少的伤害，但角色依然有一定概率直接击倒对手，这个概率在表格中被记作</FONT>“% 
+KO”。如果百分骰掷出的数字小于这个数字，目标会被震慑1d10轮。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>摔跤结果（</FONT>Wrestling）</SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：这里列出的是角色成功使用的摔跤</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>行动</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>。标有星号的</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>行动</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>会一轮接一轮地持续直到被挣脱为止。压制可以被投技、插眼睛、他人的协助或成功的武器攻击破解（攻击惩罚适用于被压制的角色使用武器攻击对手的情况）。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>所有的摔跤</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>行动</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>都会造成</FONT>1点外加上力量奖励（如果攻击者决定如此）的伤害，持续的压制</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>行动</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>每持续一轮就多造成</FONT>1点伤害。持续6轮的头部锁定技会造成总共21点伤害（1+2+3+4+5+6）。注意，这相当于整整六分钟都持续用力固定一个纳尔逊锁！</SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<TABLE class=MsoNormalTable 
+style="WIDTH: 325.65pt; BORDER-COLLAPSE: collapse; MARGIN: auto auto auto 4.65pt; mso-padding-alt: 0.0000pt 0.0000pt 0.0000pt 0.0000pt; mso-table-layout-alt: fixed">
+  
+  <TR>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 325.65pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=434 colSpan=5>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">表格58：</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">拳打和摔跤结果</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">攻击检定</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">拳打</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">伤害</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">KO率</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><B><SPAN class=16 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">摔跤结果</SPAN></B><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">20+</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">重拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">10</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">熊抱*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">19</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">猛烈横击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">0</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">拧臂</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">18</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">后颈猛击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">3</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">脚踢</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">17</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">肾击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">5</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">绊摔</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">16</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">侧击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">肘撞</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">15</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">刺拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">6</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">锁臂*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">14</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">上勾拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">8</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">扭脚</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">13</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">勾拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">锁腿</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">12</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">肾击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">5</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">投掷</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">11</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">勾拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">10</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">插眼</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">10</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">侧击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">3</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">肘撞</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">连击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">10</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">锁腿*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">8</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">上勾拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">9</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">夹头*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">7</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">连击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">10</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">投掷</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">6</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">刺拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">8</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">插眼</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">5</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">侧击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">3</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">脚踢</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">4</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">后颈猛击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">5</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">锁臂*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">3</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">勾拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">12</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">插眼</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">上勾拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">15</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">夹头*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">猛烈横击</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">0</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">扭脚</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 64.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=86>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">低于1</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 71.5pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=95>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">重拳</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 53.35pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=71>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt">2</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 54.9pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=73>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">25</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 81pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=108>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: center; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none" 
+      align=center><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">熊抱*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(34,34,34); mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR>
+  <TR>
+    <TD     style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1pt solid; WIDTH: 325.65pt; BORDER-BOTTOM: windowtext 1pt solid; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: windowtext 1pt solid; PADDING-RIGHT: 0.75pt; BACKGROUND-COLOR: transparent; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext"     vAlign=top width=434 colSpan=5>
+      <P class=MsoNormal 
+      style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 0.0000pt">*</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 0.0000pt">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'">直到被打断之前都可以一轮接一轮地持续下去</SPAN><SPAN 
+      style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt"><O:P></O:P></SPAN></P></TD></TR></TABLE>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>压制（</FONT>Overbearing）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>有时候，最有效的攻击方法，是依靠数量优势单纯地把对手按倒在地。角色不需要尝试使用压制技，甚至不需要尝试伤害目标，唯一需要考虑的就是压住他、限制他的行动。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>要压制一个对手，首先进行一个通常的攻击检定。体型每相差</FONT>1级（比如当大体型的攻击者对上一个中等体型的防御者时，体型差为1），攻击检定就受到4点调整（如果攻击者体型大则+4，若防御者体型较大则-4）。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>拥有</FONT>2条以上腿的防御者也会获得优势：每条额外的腿会使攻击者的攻击检定受到-2的惩罚。而如果防御者没有腿，也不会因此受到惩罚。一个落单的兽人如果想要连人带马地拽倒马背上的骑手，他的攻击检定至少会受到-8的惩罚（体型-4，马的四条腿-4）。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>如果这次攻击检定成功，攻击者就成功地使对手倒地。攻击者可以通过每一轮都进行后续的压制攻击来固定这个角色。在进行固定尝试时，不要使用表格</FONT>51中的倒地战斗调整。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>如果多个攻击者都试图压制同一个目标，则只掷一次攻击检定，除了第一个攻击者之外的每个额外的攻击者都将为这次攻击检定带来</FONT>+1的奖励。在这里使用的命中值总是以攻击者中最弱的那个为基准， 
+因为协作永远都是从最弱的那一环开始崩溃。体型调整则以这群攻击者中体型最大的那个为准。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><I><SPAN 
+class=15 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); FONT-STYLE: italic; mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>一个巨人和三个皮克精合作试图压制一个人类的话，使用皮克精的攻击检定，然后因为有三个额外的攻击者而获得</FONT>+3奖励，由于巨人（超大型）和人类（中型）的体型差而再获得+8的奖励。</SPAN></I><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>在非致命战斗中使用武器（</FONT>Weapons in Nonlethal Combat）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>就像你可能已经预料到的那样，武器在非致命的战斗中也有它们的一席之地，无论是在防守方还是进攻方的手里。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>将武器用于防御（</FONT>Weapons in Defense）</SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：如果角色试图对全副武装的敌人使用拳打、摔跤或者压制攻击，他必须首先将自己置于极大的危险当中。而更糟的是，无论先攻如何，持有武器的防御者都能够自动在对手进行徒手攻击之前先一步用武器攻击。不仅如此，由于对手必须接近到十分近的距离，防御者在武器的命中和伤害上都得到</FONT>+4奖励。如果攻击者还活着的话，他可以接着进行他的攻击尝试。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>而在摔跤比试开始之后，除了第一回合之外，参与者能使用的武器都仅限于小型武器</FONT>——面对正拧着你持剑的胳膊或者紧抓着你的背而试图扭断你的脖子的对手，用剑来攻击他是十分困难的。因此，几乎所有的角色都会想在身上带把匕首或者小刀。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>用武器进行非致命攻击（</FONT>Nonlethal Weapon Attacks）</SPAN></B><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>：用武器攻击而不造成致命伤害也是可能的（比如说你可以用剑身的侧面击打），但实行起来并不像说着那么容易。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>首先角色必须使用能够控制伤害的武器；这对弓箭和</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>投索</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>来说是不可能的。而这在使用战锤和硬头锤的时候，也同样几乎没有可行性。用剑和斧头控制伤害是可行的，只要能够避开刃部、不用它们去砍、切就行。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><B><SPAN 
+class=16 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 黑体; FONT-WEIGHT: bold; COLOR: rgb(255,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>非致命战斗与其他生物（</FONT>Nonlethal Combat and Creatures）</SPAN></B><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>在面对类人生物以外的对手的时候，必须考虑到若干因素。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>首先，非智能生物</FONT>——一般来说——从不会尝试摔跤、用拳头殴打或者压制某个对手。它们更乐意把他大卸八块，从四肢开始一条一条地扯下来。对于它们的小小的、动物性的脑袋来说，这是更好的解决方案。</SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>其次，这些生物总是可以使用它们的天生武器。和握着剑的人不同，狮子或肉食性的猿猴不会只因为角色离得非常近就没法使用它们的爪子和獠牙。</FONT></SPAN><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><O:P>&nbsp;</O:P></SPAN></P>
+<P class=MsoNormal 
+style="LAYOUT-GRID-MODE: char; TEXT-ALIGN: left; MARGIN: 0pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 0pt; mso-pagination: widow-orphan; mso-para-margin-right: 0.0000gd; mso-para-margin-left: 0.0000gd; mso-char-indent-count: 0.0000; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9.5pt; FONT-FAMILY: 黑体; COLOR: rgb(0,0,0); mso-font-kerning: 0.0000pt; mso-spacerun: 'yes'"><FONT face=黑体>最后，也是最重要的一点，这些生物是比人类更优秀的、天生的战士。老虎的所有攻击对它而言都是拳打和扭打，只不过老虎是有爪子的！除此之外，老虎可以有效地使用它的所有的腿</FONT>——不管是前腿还是后腿。</SPAN><SPAN 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 黑体; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><O:P></O:P></SPAN></P><!--EndFragment--></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2023. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
