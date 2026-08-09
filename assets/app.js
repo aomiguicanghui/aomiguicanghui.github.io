@@ -52,7 +52,7 @@ function walkToc(els){
     const el = els[i];
     if(!isUsableEl(el)){ i++; continue; }
     if(/^d\d+$/.test(el.id || '')){ i++; continue; }
-    const a = $('a[href]', el);
+    const a = $$('a[href]', el).find(a => a.getAttribute('href') !== '#') || null;
     let title='', url='';
     if(a && a.getAttribute('href') !== '#'){
       const sp = $('span', a);
@@ -455,12 +455,43 @@ function runSearch(){
 function closeNav(){ document.body.classList.remove('navOpen'); }
 function closeSearch(){ $('#searchResults').setAttribute('hidden',''); }
 
+/* =====================================================================
+ * 7. Theme
+ * ===================================================================== */
+const THEMES = ['parchment','elven','arcane','dungeon','dragon'];
+function applyTheme(key){
+  if(!THEMES.includes(key)) key = 'parchment';
+  document.documentElement.dataset.theme = key;
+  try{ localStorage.setItem('adnd-theme', key); }catch(e){}
+  $$('#themeMenu [data-key]').forEach(o=>o.classList.toggle('is-active', o.dataset.key === key));
+}
+function initTheme(){
+  let saved = 'parchment';
+  try{ saved = localStorage.getItem('adnd-theme') || 'parchment'; }catch(e){}
+  applyTheme(saved);
+  $('#themeBtn').addEventListener('click', e=>{
+    e.stopPropagation();
+    const menu = $('#themeMenu');
+    menu.hidden = !menu.hidden;
+  });
+  $$('#themeMenu [data-key]').forEach(o=>{
+    o.addEventListener('click', ()=>{
+      applyTheme(o.dataset.key);
+      $('#themeMenu').hidden = true;
+    });
+  });
+  document.addEventListener('click', e=>{
+    if(!e.target.closest('#themeWrap')) $('#themeMenu').hidden = true;
+  });
+}
+
 function init(){
   const input = $('#searchInput');
   const titleOnly = $('#titleOnly');
 
   loadToc();
   loadIndex();
+  initTheme();
 
   window.addEventListener('hashchange', ()=>{
     const h = decodeURIComponent(location.hash.replace(/^#/,''));
