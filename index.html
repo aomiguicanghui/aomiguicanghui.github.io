@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADND2E扩展不全书</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header id="topbar">
+  <button id="menuBtn" aria-label="菜单" title="目录">☰</button>
+  <a class="brand" href="#topics/%E5%89%8D%E5%BA%8F.htm">ADND2E扩展不全书</a>
+  <div id="searchBox">
+    <input id="searchInput" type="search" placeholder="搜索法术、规则、术语…" autocomplete="off">
+    <label id="titleOnlyWrap"><input type="checkbox" id="titleOnly"> 仅搜标题</label>
+  </div>
+</header>
+
+<div id="searchResults" hidden>
+  <div id="searchResultsHead">结果 (<span id="searchResultsCount">0</span>) — <span id="searchResultsTime"></span></div>
+  <ol id="searchResultsList"></ol>
+</div>
+
+<div id="layout">
+  <aside id="sidebar">
+    <div id="tocTree" role="tree">加载目录…</div>
+  </aside>
+  <main id="content">
+    <article id="article"></article>
+  </main>
+</div>
+
+<footer id="altFooter" hidden></footer>
+<div id="overlay" hidden></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
