@@ -1056,9 +1056,10 @@ let parsedCatalog = null; // {weapons:[], gear:[]}
 async function preloadEquipment(){
   if(parsedCatalog) return;
   parsedCatalog = {weapons:[], gear:[]};
+  const fc = (window.ADND_APP && window.ADND_APP.fetchContent) || (p => fetch(p));
   try{
     const t0=performance.now();
-    const res = await fetch('content/topics/武器表格.htm', {cache:'no-store'});
+    const res = await fc('content/topics/\u6b66\u5668\u8868\u683c.htm');
     const txt = await res.text();
     const doc = new DOMParser().parseFromString(txt,'text/html');
     const allRows = $$('table tr', doc);
@@ -1093,7 +1094,7 @@ async function preloadEquipment(){
         if(count>200) break;
       }
     }
-    const res2 = await fetch('content/topics/装备列表.htm', {cache:'no-store'});
+    const res2 = await fc('content/topics/\u88c5\u5907\u5217\u8868.htm');
     const txt2 = await res2.text();
     const doc2 = new DOMParser().parseFromString(txt2,'text/html');
     let count2=0;
@@ -1114,6 +1115,8 @@ async function preloadEquipment(){
     parsedCatalog = null;
     console.warn('[chargen] 装备表解析失败，使用内置精简表', e);
   }
+  // 若当前正停在装备步，重渲染以显示完整表
+  if(state.stepId === 'gear') render();
 }
 
 function priceNum(p){
@@ -1128,6 +1131,7 @@ function priceNum(p){
 function stepGear(){
   const h = state.hero;
   const equipped = h.equipment || [];
+  preloadEquipment();
   const source = (parsedCatalog && parsedCatalog.weapons.length) ? parsedCatalog : null;
   // 合并目录：武器 + 护甲（内置）+ 装备（解析的有则用之）
   const weapons = source ? source.weapons : FALLBACK_EQUIP.filter(e=>e.cat==='武器');
@@ -1375,7 +1379,6 @@ function init(){
     document.body.classList.add('printing');
     setTimeout(()=>{ window.print(); setTimeout(()=>document.body.classList.remove('printing'),200); }, 50);
   });
-  preloadEquipment();
   if(!state.hero) newHero();
   state.stepId = 'home';
   enableDrag();
