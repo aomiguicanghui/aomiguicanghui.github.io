@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADND2E扩展不全书</title>
 <link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/chargen.css">
 </head>
 <body>
 <header id="topbar">
@@ -14,6 +15,7 @@
     <input id="searchInput" type="search" placeholder="搜索法术、规则、术语…" autocomplete="off">
     <label id="titleOnlyWrap"><input type="checkbox" id="titleOnly"> 仅搜标题</label>
   </div>
+  <button id="chargenBtn" type="button" title="角色创建向导（车卡）" aria-label="角色创建向导">🎲 车卡</button>
   <div id="themeWrap">
     <button id="themeBtn" type="button" aria-label="切换主题" title="切换主题">
       <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -48,6 +50,23 @@
 <footer id="altFooter" hidden></footer>
 <div id="overlay" hidden></div>
 
+<div id="chargenView" hidden>
+  <header id="chargenTop">
+    <div class="cg-top-left">
+      <button id="chargenBack" type="button" title="返回阅读">←　返回</button>
+      <span class="cg-brand">角色创建向导</span>
+    </div>
+    <div class="cg-top-right">
+      <span id="cgStepLabel"></span>
+      <button id="cgSave" type="button" title="保存">💾 保存</button>
+      <button id="cgPrint" type="button" title="打印角色卡">🖨 打印</button>
+    </div>
+  </header>
+  <div id="chargenBody"></div>
+</div>
+
+<script src="assets/chargen-data.js"></script>
+<script src="assets/chargen.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
