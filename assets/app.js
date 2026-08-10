@@ -485,6 +485,12 @@ function initTheme(){
   });
 }
 
+window.ADND_APP = window.ADND_APP || {};
+window.ADND_APP.setChargenActive = function(on){
+  // 小窗模式：保持底层阅读可见，仅清掉搜索浮层
+  if(on) closeSearch();
+};
+
 function init(){
   const input = $('#searchInput');
   const titleOnly = $('#titleOnly');
