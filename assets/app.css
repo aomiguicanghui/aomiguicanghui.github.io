@@ -121,16 +121,16 @@ a{color:var(--c-accent)}
 /* ---------- TOC tree ---------- */
 #tocTree{font-size:13.5px;padding:8px 6px}
 .toc-group{display:block;width:100%;text-align:left}
-.toc-item{white-space:nowrap;display:flex;align-items:center}
-.toc-item a{color:var(--c-text);text-decoration:none;display:inline-block;max-width:calc(100% - 36px);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto;min-width:0}
+.toc-item{white-space:nowrap;padding:1px 0}
+.toc-item a{color:var(--c-text);text-decoration:none;display:inline-block;max-width:calc(100% - 46px);vertical-align:middle;overflow:hidden;text-overflow:ellipsis}
 .toc-item a:hover{color:var(--c-accent)}
 .toc-item.hl>a{color:var(--c-accent);font-weight:600}
 .toc-toggle{
-  flex:0 0 26px;width:26px;height:26px;border:1.5px solid color-mix(in srgb, var(--c-toc-toggle) 62%, transparent);
+  width:26px;height:26px;border:1.5px solid color-mix(in srgb, var(--c-toc-toggle) 62%, transparent);
   background:color-mix(in srgb, var(--c-toc-toggle) 24%, var(--c-tree));
   border-radius:7px;cursor:pointer;
   color:var(--c-toc-toggle);font-size:15px;font-weight:800;line-height:1;
-  padding:0;margin-right:6px;
+  padding:0;margin:0 6px 0 0;vertical-align:middle;
   display:inline-flex;align-items:center;justify-content:center;
   box-shadow:0 1px 2px color-mix(in srgb, var(--c-toc-toggle) 25%, transparent);
   transition:background-color .12s,color .12s,border-color .12s,transform .1s,box-shadow .12s;
@@ -143,13 +143,13 @@ a{color:var(--c-accent)}
 }
 .toc-toggle:active{transform:translateY(1px)}
 .toc-toggle.pad{
-  background:transparent;border-color:transparent;cursor:default;
+  display:inline-block;background:transparent;border-color:transparent;cursor:default;
 }
 .toc-toggle.open{
   background:var(--c-accent);border-color:var(--c-accent);color:#fff;
 }
 .toc-toggle.pad:hover,.toc-toggle.pad:focus-visible{background:transparent;color:var(--c-toc-toggle);border-color:transparent}
-.toc-children{display:none;padding-left:14px;border-left:1px dashed var(--c-toc-children);margin-left:6px}
+.toc-children{display:none;padding-left:16px;border-left:1px dashed var(--c-toc-children);margin-left:8px}
 .toc-children.open{display:block}
 .toc-folder{font-weight:600}
 
@@ -261,18 +261,17 @@ html[data-theme="dragon"] #backTop:hover{background:rgba(255,255,255,.22)}
   #searchInput{height:32px}
   #themeMenu{right:auto;left:0}
   #chargenBtn{padding:0 10px;height:34px}
-  /* 移动端目录：加大按钮间距、减小缩进、长标题换行显示完整 */
+  /* 移动端目录：加大按钮间距、浅缩进、长标题换行显示完整 */
   #tocTree{font-size:14.5px;padding:10px 8px}
   .toc-item{white-space:normal}
   .toc-item a{
     white-space:normal;overflow:visible;line-height:1.5;
-    max-width:calc(100% - 46px);margin:3px 0;vertical-align:middle;
+    max-width:100%;margin:3px 0;vertical-align:middle;
     overflow-wrap:break-word;word-break:normal;word-wrap:break-word;
   }
   .toc-toggle{
-    flex:0 0 30px;width:30px;height:30px;border-radius:8px;
-    font-size:17px;margin-right:8px;flex-shrink:0;align-self:flex-start;margin-top:2px;
+    width:30px;height:30px;border-radius:8px;
+    font-size:17px;margin:1px 8px 0 0;
   }
-  .toc-toggle.pad{align-self:flex-start;margin-top:5px}
-  .toc-children{padding-left:12px;border-left:1px dashed var(--c-toc-children);margin-left:4px}
+  .toc-children{padding-left:8px;border-left:1px dashed var(--c-toc-children);margin-left:3px}
 }
