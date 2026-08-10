@@ -4,6 +4,37 @@
 const CONTENT_BASE = 'content/';
 const TOPICS_BASE  = CONTENT_BASE + 'topics/';
 const DEFAULT_PAGE = '前序.htm';
+// 大陆加速：优先 jsDelivr CDN 镜像（可用），失败自动回退原站
+const CDN_PREFIX  = 'https://cdn.jsdelivr.net/gh/aomiguicanghui/aomiguicanghui.github.io@main/';
+let contentSource = ''; // ''=未测 'cdn'='CDN可用' 'local'='CDN不可用，固定原站'
+
+function cdnUrl(rel){
+  return CDN_PREFIX + rel.split('/').map(encodeURIComponent).join('/');
+}
+async function fetchWithTimeout(url, ms){
+  const ctrl = new AbortController();
+  const t = setTimeout(()=>ctrl.abort(), ms);
+  try{
+    const res = await fetch(url, {signal:ctrl.signal});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    return res;
+  } finally {
+    clearTimeout(t);
+  }
+}
+async function fetchContent(rel){
+  // rel 形如 'webhelpcontents.htm' 或 'topics/xxx.htm'
+  if(contentSource === 'local') return fetchWithTimeout(CONTENT_BASE + rel, 12000);
+  try{
+    const res = await fetchWithTimeout(cdnUrl('content/' + rel), 10000);
+    contentSource = 'cdn';
+    return res;
+  }catch(e){
+    console.warn('CDN 不可用，回退原站加载 ', rel, e);
+    contentSource = 'local';
+    return fetchWithTimeout(CONTENT_BASE + rel, 12000);
+  }
+}
 
 const $  = (sel, root) => (root || document).querySelector(sel);
 const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
@@ -129,16 +160,40 @@ function renderToc(tree){
 
 async function loadToc(){
   try{
-    const res = await fetch(CONTENT_BASE + 'webhelpcontents.htm');
+    const res = await fetchContent('webhelpcontents.htm');
     const txt = await res.text();
     const doc = new DOMParser().parseFromString(txt, 'text/html');
     if(!doc.body) throw new Error('no body');
     const tree = walkToc(Array.from(doc.body.children).filter(isUsableEl));
     renderToc(tree);
   }catch(e){
-    console.warn('TOC 解析失败，等待索引后使用扁平列表回退', e);
-    if(state.docs.length) buildFallbackTree();
+    console.warn('TOC 加载失败', e);
+    showTocError();
   }
+}
+
+function showTocError(){
+  const wrap = $('#tocTree');
+  if(!wrap) return;
+  wrap.textContent = '';
+  const box = document.createElement('div');
+  box.className = 'toc-error';
+  const p = document.createElement('p');
+  p.textContent = '目录加载失败';
+  const hint = document.createElement('p');
+  hint.className = 'small';
+  hint.textContent = '可通过上方搜索直接检索内容。';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.textContent = '重试';
+  btn.addEventListener('click', ()=>{
+    wrap.textContent = '加载目录…';
+    loadToc();
+  });
+  box.appendChild(p);
+  box.appendChild(hint);
+  box.appendChild(btn);
+  wrap.appendChild(box);
 }
 
 function buildFallbackTree(){
@@ -179,7 +234,7 @@ async function navigate(url, query){
   article.innerHTML = '<div id="contentLoading">加载中…</div>';
   const relFile = url.replace(/^topics\//,'');
   try{
-    const res = await fetch(TOPICS_BASE + relFile, {cache:'no-store'});
+    const res = await fetchContent('topics/' + relFile);
     if(!res.ok) throw new Error('HTTP '+res.status);
     const html = await res.text();
     const doc = new DOMParser().parseFromString(html, 'text/html');
@@ -233,10 +288,16 @@ function makeAbs(el, attr){
   const v = el.getAttribute(attr);
   if(!v) return;
   if(/^(#|https?:|data:|javascript:|mailto:|tel:|\/)/i.test(v)) return;
-  el.setAttribute(attr, TOPICS_BASE + v);
+  const target = v.replace(/^\.\/+/, '').replace(/^topics\/+/, '');
+  el.setAttribute(attr, resolveTopicRel(target));
 }
 function addAbs(el, attr){
   makeAbs(el, attr);
+}
+// topic 文档内的相对资源统一基于当前生效的内容源解析（相对 topics/ 目录）
+function resolveTopicRel(rel){
+  if(contentSource === 'cdn') return cdnUrl('content/topics/' + rel);
+  return TOPICS_BASE + rel;
 }
 
 function scrollView(){
@@ -286,11 +347,11 @@ function highlightTerms(root, query){
  * 4. Search index (data.js runtime parse)
  * ===================================================================== */
 async function loadIndex(){
-  if(state.indexBusy) return;
+  if(state.indexBusy || state.indexReady) return;
   state.indexBusy = true;
   const count = $('#searchResultsCount');
   try{
-    const res = await fetch(CONTENT_BASE + 'data.js');
+    const res = await fetchContent('data.js');
     const src = await res.text();
     const arr = parseContentsArray(src);
     const docs = [];
@@ -304,7 +365,6 @@ async function loadIndex(){
       docs.push({title, url, text, crumb});
     }
     state.docs = docs.filter(d=>d.url);
-    if(!state.treeReady) buildFallbackTree();
     state.indexReady = true;
     count.textContent = state.docs.length + ' 个文档可检索';
   }catch(e){
@@ -410,6 +470,9 @@ function runSearch(){
   if(!state.indexReady){
     count.textContent = '索引加载中…';
     panel.removeAttribute('hidden');
+    loadIndex().then(()=>{
+      if(state.indexReady && input.value.trim()) runSearch();
+    });
     return;
   }
   const t0 = performance.now();
@@ -486,6 +549,7 @@ function initTheme(){
 }
 
 window.ADND_APP = window.ADND_APP || {};
+window.ADND_APP.fetchContent = fetchContent;
 window.ADND_APP.setChargenActive = function(on){
   // 小窗模式：保持底层阅读可见，仅清掉搜索浮层
   if(on) closeSearch();
@@ -496,7 +560,6 @@ function init(){
   const titleOnly = $('#titleOnly');
 
   loadToc();
-  loadIndex();
   initTheme();
 
   window.addEventListener('hashchange', ()=>{
