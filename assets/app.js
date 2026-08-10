@@ -120,6 +120,7 @@ function buildTocDom(tree, container){
           const box = row.querySelector(':scope > .toc-children');
           const open = box.classList.toggle('open');
           b.textContent = open ? '▾' : '▸';
+          b.classList.toggle('open', open);
         });
         row.appendChild(b);
       } else {

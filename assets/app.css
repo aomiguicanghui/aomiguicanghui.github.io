@@ -121,14 +121,34 @@ a{color:var(--c-accent)}
 /* ---------- TOC tree ---------- */
 #tocTree{font-size:13.5px;padding:8px 6px}
 .toc-group{display:block;width:100%;text-align:left}
-.toc-item{white-space:nowrap}
-.toc-item a{color:var(--c-text);text-decoration:none;display:inline-block;max-width:calc(100% - 22px);vertical-align:middle;overflow:hidden;text-overflow:ellipsis}
+.toc-item{white-space:nowrap;display:flex;align-items:center}
+.toc-item a{color:var(--c-text);text-decoration:none;display:inline-block;max-width:calc(100% - 36px);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto;min-width:0}
 .toc-item a:hover{color:var(--c-accent)}
 .toc-item.hl>a{color:var(--c-accent);font-weight:600}
 .toc-toggle{
-  width:16px;height:16px;border:none;background:transparent;cursor:pointer;
-  color:var(--c-toc-toggle);font-size:10px;vertical-align:middle;padding:0;margin-right:2px;line-height:1;
+  flex:0 0 26px;width:26px;height:26px;border:1.5px solid color-mix(in srgb, var(--c-toc-toggle) 62%, transparent);
+  background:color-mix(in srgb, var(--c-toc-toggle) 24%, var(--c-tree));
+  border-radius:7px;cursor:pointer;
+  color:var(--c-toc-toggle);font-size:15px;font-weight:800;line-height:1;
+  padding:0;margin-right:6px;
+  display:inline-flex;align-items:center;justify-content:center;
+  box-shadow:0 1px 2px color-mix(in srgb, var(--c-toc-toggle) 25%, transparent);
+  transition:background-color .12s,color .12s,border-color .12s,transform .1s,box-shadow .12s;
 }
+.toc-toggle:hover,.toc-toggle:focus-visible{
+  background:color-mix(in srgb, var(--c-toc-toggle) 40%, var(--c-tree));
+  color:var(--c-accent);border-color:var(--c-accent);
+  box-shadow:0 2px 4px color-mix(in srgb, var(--c-toc-toggle) 30%, transparent);
+  outline:none;
+}
+.toc-toggle:active{transform:translateY(1px)}
+.toc-toggle.pad{
+  background:transparent;border-color:transparent;cursor:default;
+}
+.toc-toggle.open{
+  background:var(--c-accent);border-color:var(--c-accent);color:#fff;
+}
+.toc-toggle.pad:hover,.toc-toggle.pad:focus-visible{background:transparent;color:var(--c-toc-toggle);border-color:transparent}
 .toc-children{display:none;padding-left:14px;border-left:1px dashed var(--c-toc-children);margin-left:6px}
 .toc-children.open{display:block}
 .toc-folder{font-weight:600}
