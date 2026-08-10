@@ -51,11 +51,12 @@
 .cg-step{
   border:1px solid var(--c-border); background:var(--c-surface);
   color:var(--c-text); padding:5px 11px; border-radius:14px;
-  cursor:pointer; font-size:12px;
+  cursor:pointer; font-size:12px; font-weight:600;
 }
-.cg-step:hover{ background:var(--c-hover); }
+.cg-step:hover{ background:var(--c-hover); border-color:var(--c-accent); }
 .cg-step.cur{
   background:var(--c-accent); border-color:var(--c-accent); color:#fff;
+  box-shadow:0 0 0 2px var(--c-acc-outline);
 }
 
 /* 卡片 */
@@ -108,6 +109,18 @@
   width:80px; padding:5px 8px; border:1px solid var(--c-border);
   border-radius:6px; background:var(--c-input-bg); color:var(--c-input-text);
 }
+/* 输入框统一焦点态 + 对比度 */
+#chargenBody input, #chargenBody select, #chargenBody textarea{
+  border:1px solid var(--c-border);
+}
+#chargenBody input:focus, #chargenBody select:focus, #chargenBody textarea:focus{
+  outline:none;
+  border-color:var(--c-accent);
+  box-shadow:0 0 0 2px var(--c-acc-outline);
+}
+#chargenBody input:hover, #chargenBody select:hover, #chargenBody textarea:hover{
+  border-color:color-mix(in srgb, var(--c-border) 40%, var(--c-accent));
+}
 
 /* 种族/职业/阵营卡片网格 */
 .cg-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:10px; }
@@ -116,12 +129,13 @@
   cursor:pointer; background:var(--c-surface);
   transition:border-color .12s, box-shadow .12s;
 }
-.cg-race:hover, .cg-class:hover, .cg-align:hover{ border-color:var(--c-accent); }
+.cg-race:hover, .cg-class:hover, .cg-align:hover{ border-color:var(--c-accent); box-shadow:0 2px 8px rgba(0,0,0,.1); }
 .cg-race.sel, .cg-class.sel, .cg-align.sel{
-  border-color:var(--c-accent); box-shadow:0 0 0 1px var(--c-accent) inset;
+  border-color:var(--c-accent); box-shadow:0 0 0 2px var(--c-acc-outline) inset, 0 2px 10px rgba(0,0,0,.12);
 }
 .cg-race h3{ margin:0 0 6px; font-size:16px; }
-.cg-race.bad, .cg-class.bad{ border-color:#c24935; background:#fdf3f0; }
+.cg-class h4{ margin:0 0 5px; font-size:15px; }
+.cg-race.bad, .cg-class.bad{ border-color:#c24935; background:rgba(194,73,53,.06); }
 .cg-class h4{ margin:0 0 5px; font-size:15px; }
 .cg-group{ margin-bottom:14px; }
 .cg-group > h3{ border-bottom:1px dashed var(--c-border); padding-bottom:6px; }
@@ -227,6 +241,11 @@
 .cg-gear input{ display:inline; }
 
 /* 角色卡 */
+.sh-sheet h3{
+  margin:20px 0 8px; padding-top:14px; border-top:1px solid var(--c-border); font-size:15px;
+}
+.sh-sheet h3:first-child{ border-top:none; }
+.sh-sheet .sh-head + h3{ border-top:none; padding-top:0; }
 .sh-sheet .sh-head{
   display:flex; justify-content:space-between; align-items:flex-start;
   gap:16px; border-bottom:2px solid var(--c-border); padding-bottom:12px; margin-bottom:6px;
@@ -308,13 +327,18 @@
     height:100vh; height:100dvh;
     border:none; border-radius:0;
   }
-  #chargenTop{ min-height:50px; padding:0 8px; border-radius:0; }
+  #chargenTop{ min-height:50px; padding:0 8px; border-radius:0; background:var(--c-topbar-bg); }
   #chargenTop button, #chargenTop .cg-top-right button{ min-height:40px; padding:8px 12px; font-size:14px; }
   #chargenBack{ font-size:15px; }
   #cgStepLabel{ font-size:13px; }
   .cg-brand{ font-size:15px; }
   #chargenBody{ padding:10px 12px 40px calc(12px + env(safe-area-inset-left,0px)); }
   #chargenBody{ padding-right:calc(12px + env(safe-area-inset-right,0px)); padding-bottom:calc(40px + env(safe-area-inset-bottom,0px)); }
+  /* 顶栏：窄屏隐藏品牌名，留出空间，防重叠 */
+  .cg-brand{ display:none; }
+  #cgStepLabel{ max-width:34vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:0 0 auto; }
+  .cg-top-right{ gap:6px; }
+  .cg-top-right button{ min-width:44px; padding:8px 10px; }
 
   /* 步骤胶囊：单行横向滚动，避免换行占用空间 */
   .cg-steps{ flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding:8px 0 10px; }
@@ -331,7 +355,7 @@
   input[type=range]{ accent-color:var(--c-accent); }
 
   .cg-footer{ flex-wrap:wrap; }
-  .cg-footer{ position:sticky; bottom:0; background:var(--c-bg); padding:10px 2px calc(10px + env(safe-area-inset-bottom,0px)); z-index:4; }
+  .cg-footer{ position:sticky; bottom:0; background:var(--c-bg); padding:10px 2px calc(10px + env(safe-area-inset-bottom,0px)); z-index:4; box-shadow:0 -4px 14px rgba(0,0,0,.1); border-top:1px solid var(--c-border); }
   .cg-footer .btn{ flex:1; min-width:0; }
 
   .cg-col2, .sh-cols{ grid-template-columns:1fr; }
