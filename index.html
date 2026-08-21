@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADND2E扩展不全书</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b2620'/%3E%3Cpath d='M16 4l9 12-9 12L7 16z' fill='none' stroke='%23a8842c' stroke-width='2.4'/%3E%3Cpath d='M16 10l5 6-5 6-5-6z' fill='%23a8842c'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="assets/app.css">
 <link rel="stylesheet" href="assets/chargen.css">
@@ -41,7 +42,8 @@
 
 <div id="layout">
   <aside id="sidebar">
-    <div id="tocTree" role="tree">加载目录…</div>
+    <div id="tocHeader">典籍目录</div>
+    <div id="tocTree" role="tree">正在展开目录…</div>
   </aside>
   <main id="content">
     <article id="article"></article>
@@ -49,7 +51,8 @@
 </div>
 
 <footer id="altFooter" hidden></footer>
-<div id="overlay" hidden></div>
+<div id="sidebarBackdrop"></div>
+<button id="backTop" type="button" title="回到顶部" aria-label="回到顶部"><span>▲</span></button>
 
 <div id="chargenView" hidden>
   <header id="chargenTop">
