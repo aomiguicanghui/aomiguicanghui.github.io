@@ -239,7 +239,7 @@ async function navigate(url, query){
     if(!res.ok) throw new Error('HTTP '+res.status);
     const html = await res.text();
     const doc = new DOMParser().parseFromString(html, 'text/html');
-    $$('script', doc).forEach(s=>s.remove());
+    sanitizeImported(doc);
     const titleNode = $('#winchm_template_title', doc);
     const title = titleNode ? titleNode.textContent.trim()
                            : (($('title', doc)||{}).textContent || '').trim();
@@ -283,6 +283,21 @@ async function navigate(url, query){
     article.innerHTML = '<p id="loadError" style="padding:30px;color:#a33">无法加载「'+esc(state.currentUrl)+'」<br>该文件可能不在 content/topics/ 中。</p>';
     console.error(err);
   }
+}
+
+// 内容导入净化：内容源（本仓库/CDN 镜像）被篡改时的纵深防御
+function sanitizeImported(root){
+  $$('script,iframe,frame,frameset,object,embed,link,base,meta[http-equiv]', root).forEach(el=>el.remove());
+  $$('*', root).forEach(el=>{
+    for(const attr of Array.from(el.attributes)){
+      const n = attr.name.toLowerCase();
+      if(n.startsWith('on')){ el.removeAttribute(attr.name); continue; }
+      if((n === 'href' || n === 'src' || n === 'xlink:href' || n === 'srcset') &&
+         /^\s*(javascript|data\s*:\s*text\/html)/i.test(attr.value)){
+        el.removeAttribute(attr.name);
+      }
+    }
+  });
 }
 
 function makeAbs(el, attr){
@@ -377,10 +392,21 @@ async function loadIndex(){
 }
 
 function parseContentsArray(src){
+  // 安全解析：不执行任何代码（旧实现用 new Function，属 eval 等价物）。
+  // data.js 结构为 new Array("文本","标题","URL",...) 的纯字符串字面量序列。
   const m = src.match(/new\s+Array\s*\(([\s\S]*)\)\s*;?\s*$/);
   if(!m) throw new Error('data.js 解析失败');
-  const list = m[1].replace(/\r/g,'');
-  return new Function('return [' + list + ']')();
+  const out = [];
+  const re = /"(?:[^"\\\r\n]|\\[\s\S])*"/g;
+  let t;
+  while((t = re.exec(m[1])) !== null) out.push(unescapeJsString(t[0].slice(1, -1)));
+  return out;
+}
+function unescapeJsString(s){
+  // 与 JS 字符串转义语义一致（数据中仅出现 \" \' \\ \n \r \t，无八/十六进制转义）
+  return s.replace(/\\([\s\S])/g, (_, c) => (
+    {n:'\n', r:'\r', t:'\t', b:'\b', f:'\f', v:'\v', '0':'\0'}[c] || c
+  ));
 }
 
 function doSearch(query, titleOnly){
