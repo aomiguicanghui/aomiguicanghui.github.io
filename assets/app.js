@@ -188,7 +188,7 @@ function showTocError(){
   btn.type = 'button';
   btn.textContent = '重试';
   btn.addEventListener('click', ()=>{
-    wrap.textContent = '加载目录…';
+    wrap.textContent = '正在展开目录…';
     loadToc();
   });
   box.appendChild(p);
@@ -232,7 +232,7 @@ async function navigate(url, query){
   }
 
   const article = $('#article');
-  article.innerHTML = '<div id="contentLoading">加载中…</div>';
+  article.innerHTML = '<div id="contentLoading">正在翻阅典籍…</div>';
   const relFile = url.replace(/^topics\//,'');
   try{
     const res = await fetchContent('topics/' + relFile);
@@ -576,6 +576,17 @@ function init(){
 
   $('#menuBtn').addEventListener('click', ()=>{
     document.body.classList.toggle('navOpen');
+  });
+  $('#sidebarBackdrop').addEventListener('click', closeNav);
+
+  // 返回顶部（长规则页滚动时出现）
+  const backTop = $('#backTop');
+  const contentEl = $('#content');
+  contentEl.addEventListener('scroll', ()=>{
+    backTop.classList.toggle('show', contentEl.scrollTop > 400);
+  }, {passive:true});
+  backTop.addEventListener('click', ()=>{
+    contentEl.scrollTo({top:0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
   });
 
   input.addEventListener('input', debounce(runSearch, 120));
