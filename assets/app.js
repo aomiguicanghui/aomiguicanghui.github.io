@@ -91,6 +91,8 @@ function walkToc(els){
       url = normUrl(a.getAttribute('href') || '');
     }
     if(!title) title = (el.textContent || '').trim();
+    // 过滤目录源文件里的占位文本（如 "Loading table of contents..."）
+    if(/^loading table of contents/i.test(title)){ i++; continue; }
     const item = { title, url, children: [] };
     const nxt = i+1 < els.length ? els[i+1] : null;
     if(nxt && /^d\d+$/.test(nxt.id || '')){
@@ -287,7 +289,7 @@ async function navigate(url, query){
 
 // 内容导入净化：内容源（本仓库/CDN 镜像）被篡改时的纵深防御
 function sanitizeImported(root){
-  $$('script,iframe,frame,frameset,object,embed,link,base,meta[http-equiv]', root).forEach(el=>el.remove());
+  $$('script,iframe,frame,frameset,object,embed,link,base,meta[http-equiv],style', root).forEach(el=>el.remove());
   $$('*', root).forEach(el=>{
     for(const attr of Array.from(el.attributes)){
       const n = attr.name.toLowerCase();
@@ -296,6 +298,55 @@ function sanitizeImported(root){
          /^\s*(javascript|data\s*:\s*text\/html)/i.test(attr.value)){
         el.removeAttribute(attr.name);
       }
+    }
+  });
+  normalizeContentStyles(root);
+}
+
+// WinCHM/Word 导出内容带有大量内联排版噪声（9.5pt 字号、黑体、MARGIN:0、mso-* 等），
+// 会让站点排版体系和暗色主题完全失效。这里做有选择的剥离与归一：
+// - 删除字体/字号/间距/mso-* 等排版属性，交还给全局样式表
+// - 纯黑文字色 → 删除（继承主题文字色，暗色主题下不再隐形）
+// - 纯红强调色 → 映射为主题 accent 变量（各主题下观感一致）
+// - 近白背景色 → 删除（暗色主题下不再出现刺眼的白色块）
+function normalizeContentStyles(root){
+  const DROP = /^(font-family|font-size|font|margin|margin-.*|padding|padding-.*|line-height|text-indent|text-autospace|layout-grid.*|mso-.*|tab-interval|letter-spacing|word-spacing)$/i;
+  const parseRgb = s => {
+    const m = String(s||'').match(/rgba?\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/i);
+    return m ? [ +m[1], +m[2], +m[3] ] : null;
+  };
+  const isBlackish = c => c && c[0]<70 && c[1]<70 && c[2]<70;
+  const isReddish  = c => c && c[0]>140 && c[1]<90 && c[2]<90;
+  const isWhitish  = c => c && c[0]>238 && c[1]>238 && c[2]>238;
+
+  $$('[style]', root).forEach(el=>{
+    const st = el.style;
+    // 颜色归一（先于属性删除，避免被 DROP 误伤——color/background 不在 DROP 中）
+    const col = parseRgb(st.color);
+    if(isBlackish(col)) st.removeProperty('color');
+    else if(isReddish(col)) st.setProperty('color', 'var(--c-accent)');
+    const bg = parseRgb(st.backgroundColor);
+    if(isWhitish(bg)) st.removeProperty('background-color');
+    // 表格内的内联边框（Word 导出的 windowtext 网格线）一并剥离，交还给书版细线样式
+    const inTable = !!el.closest('table');
+    // 删除排版噪声
+    for(const prop of Array.from(st)){
+      if(DROP.test(prop) || (inTable && /^border(-.*)?$/i.test(prop))) st.removeProperty(prop);
+    }
+    if(!st.length && el.getAttribute('style') !== null) el.removeAttribute('style');
+  });
+  // <font face/size/color> 呈现属性：face/size 一律去除，color 同样归一
+  $$('font', root).forEach(f=>{
+    f.removeAttribute('face');
+    f.removeAttribute('size');
+    const c = f.getAttribute('color');
+    if(c){
+      f.removeAttribute('color');
+      const rgb = parseRgb(c);
+      const named = String(c).trim().toLowerCase();
+      if(named === 'red' || isReddish(rgb)) f.style.setProperty('color', 'var(--c-accent)');
+      else if(named === 'black' || isBlackish(rgb) || isWhitish(rgb)) { /* 继承主题色 */ }
+      else f.style.setProperty('color', c);
     }
   });
 }
