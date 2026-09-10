@@ -634,8 +634,9 @@ function initTheme(){
 window.ADND_APP = window.ADND_APP || {};
 window.ADND_APP.fetchContent = fetchContent;
 window.ADND_APP.setChargenActive = function(on){
-  // 小窗模式：保持底层阅读可见，仅清掉搜索浮层
+  // 车卡 sheet 打开时：清掉搜索浮层，并让底层内容轻微后退（iOS 的模态推挤效果）
   if(on) closeSearch();
+  document.body.classList.toggle('chargenOpen', !!on);
 };
 
 function init(){

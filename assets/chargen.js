@@ -118,54 +118,9 @@ function exitChargen(){
   }
 }
 
-/* ==================== 拖拽移动小窗 ==================== */
-function enableDrag(){
-  const v = $('#chargenView');
-  const top = $('#chargenTop');
-  if(!v || !top) return;
-  let sx=0, sy=0, ox=0, oy=0, drag=false;
-  top.style.userSelect = 'none';
-  top.addEventListener('mousedown', (e)=>{
-    const btn = e.button;
-    if(btn !== 0 && btn !== undefined) return;
-    drag = true;
-    const r = v.getBoundingClientRect();
-    ox = r.left; oy = r.top;
-    sx = e.clientX - ox; sy = e.clientY - oy;
-    e.preventDefault();
-  });
-  document.addEventListener('mousemove', (e)=>{
-    if(!drag) return;
-    const r = v.getBoundingClientRect();
-    let nx = e.clientX - sx, ny = e.clientY - sy;
-    // 限制在可视区域
-    nx = Math.max(-r.width+80, Math.min(nx, window.innerWidth-60));
-    ny = Math.max(0, Math.min(ny, window.innerHeight-40));
-    v.style.top = ny+'px';
-    v.style.right = 'auto';
-    v.style.left = nx+'px';
-  });
-  document.addEventListener('mouseup', ()=>{ drag = false; });
-  // 触摸支持
-  top.addEventListener('touchstart', (e)=>{
-    const t = e.touches[0];
-    drag = true;
-    const r = v.getBoundingClientRect();
-    ox = r.left; oy = r.top;
-    sx = t.clientX - ox; sy = t.clientY - oy;
-  }, {passive:true});
-  document.addEventListener('touchmove', (e)=>{
-    if(!drag) return;
-    const t = e.touches[0];
-    let nx = t.clientX - sx, ny = t.clientY - sy;
-    nx = Math.max(-v.getBoundingClientRect().width+80, Math.min(nx, window.innerWidth-60));
-    ny = Math.max(0, Math.min(ny, window.innerHeight-40));
-    v.style.top = ny+'px';
-    v.style.right = 'auto';
-    v.style.left = nx+'px';
-  }, {passive:true});
-  document.addEventListener('touchend', ()=>{ drag = false; });
-}
+/* 说明：原先这里有一套"拖拽移动小窗"逻辑，会把 left/top 写成行内样式，
+   使车卡呈现为可拖动的桌面窗口。现已按 iOS sheet 规范改为固定呈现
+   （桌面居中弹出 / 移动端底部上滑），不再支持拖动，故移除。 */
 
 /* ==================== 主渲染 ==================== */
 const STEPS = [
@@ -199,7 +154,15 @@ function render(){
   body.innerHTML = nav + '<div class="cg-body">' + content + '</div>';
   $('#cgStepLabel').textContent = STEPS.find(s=>s.id===state.stepId).label;
   wireNav(body);
+  // 步骤切换时：内容回到顶部，并把当前步骤胶囊滚到可见处（步骤多于一屏）
+  if(prevRenderedStep !== state.stepId){
+    prevRenderedStep = state.stepId;
+    body.scrollTop = 0;
+    const cur = $('.cg-step.cur', body);
+    if(cur && cur.scrollIntoView) cur.scrollIntoView({block:'nearest', inline:'center'});
+  }
 }
+let prevRenderedStep = null;
 
 function renderStep(){
   const s = state.stepId || 'home';
@@ -1381,7 +1344,6 @@ function init(){
   });
   if(!state.hero) newHero();
   state.stepId = 'home';
-  enableDrag();
 }
 if(document.readyState==='loading'){
   document.addEventListener('DOMContentLoaded', init);
