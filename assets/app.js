@@ -692,6 +692,15 @@ function init(){
     input.focus();
     input.select();
   });
+
+  // 窄屏搜索框空间有限，占位文字改用极简形态，避免被裁切
+  const narrow = matchMedia('(max-width:600px)');
+  const syncPlaceholder = ()=>{
+    input.placeholder = narrow.matches ? '搜索' : '搜索法术、规则、术语…';
+  };
+  syncPlaceholder();
+  if(narrow.addEventListener) narrow.addEventListener('change', syncPlaceholder);
+  else if(narrow.addListener) narrow.addListener(syncPlaceholder);
 }
 
 if(document.readyState === 'loading'){
