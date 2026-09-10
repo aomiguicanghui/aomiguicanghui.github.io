@@ -82,6 +82,9 @@
   --amb-2:rgba(255,142,186,.72);
   --amb-3:rgba(126,214,192,.78);
   --amb-4:rgba(255,196,110,.68);
+  /* 顶部滚动淡出（内容钻到导航条下方时的渐隐色） */
+  --fade-top:rgba(230,236,251,.72);
+  --fade-top-2:rgba(230,236,251,.3);
 
   --ease:cubic-bezier(.25,.1,.25,1);
   --spring:cubic-bezier(.32,1.4,.46,1);
@@ -256,12 +259,15 @@ a{color:var(--c-accent);text-decoration:none}
 /* ============================================================
    布局：玻璃面板悬浮在环境光之上
    ============================================================ */
+/* 内容区一直延伸到视口顶端：滚动时正文会从玻璃导航条下方穿过，
+   首屏位置改由 #content 的 padding-top 顶下来。侧栏保持在导航条下方。 */
 #layout{
-  padding:var(--topbar-h) var(--pad) var(--pad);
+  padding:0 var(--pad) var(--pad);
   display:flex;align-items:stretch;gap:var(--pad);
   height:100vh;height:100dvh;overflow:hidden;
 }
 #sidebar{
+  margin-top:var(--topbar-h);
   width:var(--sidebar-w);flex:0 0 var(--sidebar-w);
   border-radius:var(--r-panel);
   background:var(--glass-fill-panel);
@@ -281,9 +287,20 @@ a{color:var(--c-accent);text-decoration:none}
 #content{
   flex:1 1 auto;overflow-y:auto;overflow-x:hidden;
   background:transparent;
+  /* 首屏留白用内边距而非父级内边距：内边距会随内容一起滚走，
+     于是正文可以滑到玻璃导航条下面去。 */
+  padding-top:var(--topbar-h);
   /* 不用 scroll-behavior:smooth：平滑滚动期间长文档的合成层更容易出现
      刷新不同步（正文画到面板外）。返回顶部的平滑仍由 JS 单独控制。 */
   scroll-behavior:auto;
+}
+/* 滚动边缘效果：内容钻到导航条下面时向上淡出（iOS 的 scroll edge effect，
+   层级低于导航条、高于内容） */
+body::after{
+  content:"";position:fixed;top:0;left:0;right:0;
+  height:calc(var(--nav-h) + var(--nav-gap) + 10px);
+  z-index:45;pointer-events:none;
+  background:linear-gradient(180deg,var(--fade-top) 0%,var(--fade-top-2) 62%,transparent 100%);
 }
 #article{
   max-width:780px;margin:0 auto;
@@ -515,6 +532,7 @@ html[data-theme="elven"]{
   --amb-base:linear-gradient(180deg,#fdf1e7 0%,#fbe9ee 55%,#f4e8e0 100%);
   --amb-1:rgba(255,170,110,.82);--amb-2:rgba(255,138,170,.68);
   --amb-3:rgba(255,214,140,.78);--amb-4:rgba(206,170,255,.55);
+  --fade-top:rgba(253,241,231,.72);--fade-top-2:rgba(253,241,231,.3);
   --glass-fill:rgba(255,252,248,.52);--glass-fill-strong:rgba(255,252,249,.66);
   --glass-fill-soft:rgba(255,252,248,.36);--glass-fill-menu:rgba(255,252,249,.95);--glass-fill-panel:rgba(255,252,249,.78);--glass-fill-card:rgba(255,255,255,.55);
   --glass-rim:rgba(255,255,255,.68);--glass-rim-inner:rgba(255,255,255,.95);
@@ -527,6 +545,7 @@ html[data-theme="arcane"]{
   --amb-base:linear-gradient(180deg,#eef0f6 0%,#e8ebf3 55%,#eeeef2 100%);
   --amb-1:rgba(138,150,182,.72);--amb-2:rgba(186,192,208,.66);
   --amb-3:rgba(160,174,200,.72);--amb-4:rgba(206,200,222,.6);
+  --fade-top:rgba(238,240,246,.72);--fade-top-2:rgba(238,240,246,.3);
   --glass-fill:rgba(252,252,253,.52);--glass-fill-strong:rgba(253,253,254,.66);
   --glass-fill-soft:rgba(252,252,253,.36);--glass-fill-menu:rgba(253,253,254,.95);--glass-fill-panel:rgba(253,253,254,.78);--glass-fill-card:rgba(255,255,255,.55);
   --glass-rim:rgba(255,255,255,.7);--glass-rim-inner:rgba(255,255,255,.96);
@@ -539,6 +558,7 @@ html[data-theme="dungeon"]{
   --amb-base:linear-gradient(180deg,#0a0e1c 0%,#141431 55%,#0b0f22 100%);
   --amb-1:rgba(58,110,255,.75);--amb-2:rgba(140,80,255,.6);
   --amb-3:rgba(0,178,190,.5);--amb-4:rgba(255,96,160,.42);
+  --fade-top:rgba(10,14,28,.7);--fade-top-2:rgba(10,14,28,.28);
   --glass-fill:rgba(40,42,56,.42);--glass-fill-strong:rgba(32,34,48,.6);
   --glass-fill-soft:rgba(40,42,56,.3);--glass-fill-menu:rgba(26,28,40,.97);--glass-fill-panel:rgba(30,32,44,.7);--glass-fill-card:rgba(255,255,255,.07);
   --glass-rim:rgba(255,255,255,.18);--glass-rim-inner:rgba(255,255,255,.26);
@@ -561,6 +581,7 @@ html[data-theme="dragon"]{
   --amb-base:linear-gradient(180deg,#030306 0%,#0a0a16 55%,#030307 100%);
   --amb-1:rgba(48,78,210,.55);--amb-2:rgba(118,58,210,.45);
   --amb-3:rgba(0,142,164,.4);--amb-4:rgba(210,62,124,.32);
+  --fade-top:rgba(3,3,6,.72);--fade-top-2:rgba(3,3,6,.28);
   --glass-fill:rgba(30,30,36,.4);--glass-fill-strong:rgba(24,24,30,.58);
   --glass-fill-soft:rgba(30,30,36,.28);--glass-fill-menu:rgba(18,18,22,.98);--glass-fill-panel:rgba(22,22,26,.74);--glass-fill-card:rgba(255,255,255,.06);
   --glass-rim:rgba(255,255,255,.14);--glass-rim-inner:rgba(255,255,255,.22);
@@ -628,6 +649,7 @@ html[data-theme="dragon"] #content::-webkit-scrollbar-thumb{
   /* 抽屉：整块玻璃从左侧滑出，内容在其后 */
   #sidebar{
     position:fixed;top:var(--topbar-h);bottom:var(--pad);left:var(--pad);z-index:60;
+    margin-top:0;
     width:var(--sidebar-w);
     transform:translateX(calc(-100% - var(--pad) - 8px));
     transition:transform .34s var(--ease);
