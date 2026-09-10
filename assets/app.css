@@ -32,6 +32,11 @@
   --glass-fill-soft:rgba(255,255,255,.34);
   /* 厚材质：菜单/弹层这类密集小控件用，避免背后文字干扰阅读 */
   --glass-fill-menu:rgba(255,255,255,.95);
+  /* 面板材质：滚动内容区专用。不带实时模糊——滚动容器的 backdrop-filter
+     在 Chromium 上会滞后重绘（玻璃层停在旧位置），且 iOS 本身对内容区
+     也是用"常规材质"而非实时毛玻璃。下面的环境底已是模糊的，观感一致。 */
+  --glass-fill-panel:rgba(255,255,255,.74);
+  --glass-fill-card:rgba(255,255,255,.55);
   --glass-rim:rgba(255,255,255,.62);
   --glass-rim-inner:rgba(255,255,255,.9);
   --glass-shadow:0 12px 40px rgba(28,38,72,.16), 0 2px 8px rgba(28,38,72,.08);
@@ -100,15 +105,16 @@ body{
   overflow:hidden;
 }
 /* 环境光层：玻璃的意义来自它背后的颜色 */
+/* 环境光层：只用渐变的自然过渡，不用 filter:blur（整屏滤镜层在部分 Windows
+   GPU 上会渲染出硬边色块，也拖慢合成）。色标间距拉大即可保持柔和。 */
 body::before{
-  content:"";position:fixed;inset:-15%;z-index:-1;pointer-events:none;
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background:
-    radial-gradient(38% 34% at 10% 4%,  var(--amb-1), transparent 62%),
-    radial-gradient(34% 30% at 92% 10%, var(--amb-2), transparent 60%),
-    radial-gradient(44% 40% at 78% 92%, var(--amb-3), transparent 62%),
-    radial-gradient(32% 28% at 18% 86%, var(--amb-4), transparent 60%),
-    radial-gradient(30% 26% at 52% 48%, var(--amb-2), transparent 62%);
-  filter:blur(18px);
+    radial-gradient(48% 42% at 8% 2%,  var(--amb-1), transparent 78%),
+    radial-gradient(44% 38% at 94% 8%, var(--amb-2), transparent 76%),
+    radial-gradient(54% 48% at 80% 96%, var(--amb-3), transparent 78%),
+    radial-gradient(42% 36% at 14% 92%, var(--amb-4), transparent 76%),
+    radial-gradient(40% 34% at 52% 50%, var(--amb-2), transparent 80%);
 }
 a{color:var(--c-accent);text-decoration:none}
 ::selection{background:var(--c-mark-bg);color:var(--c-mark-text)}
@@ -258,9 +264,7 @@ a{color:var(--c-accent);text-decoration:none}
 #sidebar{
   width:var(--sidebar-w);flex:0 0 var(--sidebar-w);
   border-radius:var(--r-panel);
-  background:var(--glass-fill);
-  -webkit-backdrop-filter:var(--glass-blur);
-          backdrop-filter:var(--glass-blur);
+  background:var(--glass-fill-panel);
   border:1px solid var(--glass-rim);
   box-shadow:var(--glass-shadow), var(--glass-inset);
   overflow-y:auto;overflow-x:hidden;
@@ -270,24 +274,27 @@ a{color:var(--c-accent);text-decoration:none}
   padding:18px 20px 12px;margin:0;
   font-size:12px;font-weight:600;letter-spacing:.01em;
   color:var(--c-muted);
-  background:var(--glass-fill-strong);
-  -webkit-backdrop-filter:var(--glass-blur);
-          backdrop-filter:var(--glass-blur);
+  background:var(--glass-fill-menu);
   border-bottom:1px solid var(--c-divider-soft);
+  border-radius:calc(var(--r-panel) - 1px) calc(var(--r-panel) - 1px) 0 0;
 }
 #content{
   flex:1 1 auto;overflow-y:auto;overflow-x:hidden;
   background:transparent;
+  /* 不用 scroll-behavior:smooth：平滑滚动期间长文档的合成层更容易出现
+     刷新不同步（正文画到面板外）。返回顶部的平滑仍由 JS 单独控制。 */
+  scroll-behavior:auto;
 }
 #article{
   max-width:780px;margin:0 auto;
   padding:44px 48px 104px;
   border-radius:var(--r-panel);
-  background:var(--glass-fill-strong);
-  -webkit-backdrop-filter:var(--glass-blur);
-          backdrop-filter:var(--glass-blur);
+  /* 内容面板：半透明常规材质（无实时模糊），overflow:clip 保证内容
+     永远被裁在圆角面板内，不会画到面板外 */
+  background:var(--glass-fill-panel);
   border:1px solid var(--glass-rim);
   box-shadow:var(--glass-shadow), var(--glass-inset);
+  overflow:clip;
 }
 
 /* ---------- 目录 ---------- */
@@ -351,9 +358,8 @@ a{color:var(--c-accent);text-decoration:none}
 /* ---------- 搜索结果：玻璃浮层 ---------- */
 #searchResults{
   position:fixed;top:calc(var(--topbar-h) - 4px);left:var(--pad);right:var(--pad);z-index:40;
+  /* 结果面板自身可滚动 → 用厚材质，不加实时模糊（避免滚动重绘滞后） */
   background:var(--glass-fill-menu);
-  -webkit-backdrop-filter:var(--glass-blur-strong);
-          backdrop-filter:var(--glass-blur-strong);
   border:1px solid var(--glass-rim);
   border-radius:var(--r-panel);
   box-shadow:var(--glass-shadow), var(--glass-inset);
@@ -365,8 +371,6 @@ a{color:var(--c-accent);text-decoration:none}
   font-size:12px;font-weight:600;color:var(--c-muted);letter-spacing:.01em;
   padding:14px 24px 10px;
   background:var(--glass-fill-menu);
-  -webkit-backdrop-filter:var(--glass-blur);
-          backdrop-filter:var(--glass-blur);
   border-bottom:1px solid var(--c-divider-soft);
   border-radius:var(--r-panel) var(--r-panel) 0 0;
 }
@@ -441,11 +445,9 @@ a{color:var(--c-accent);text-decoration:none}
 #article blockquote{
   margin:24px 0;padding:22px 26px;
   border:1px solid var(--glass-rim);border-radius:var(--r-lg);
-  background:var(--glass-fill);
-  -webkit-backdrop-filter:blur(20px) saturate(160%);
-          backdrop-filter:blur(20px) saturate(160%);
+  background:var(--glass-fill-strong);
   color:var(--c-subtle);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.7);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6);
 }
 #article blockquote p:last-child{margin-bottom:0}
 #article mark{
@@ -514,7 +516,7 @@ html[data-theme="elven"]{
   --amb-1:rgba(255,170,110,.82);--amb-2:rgba(255,138,170,.68);
   --amb-3:rgba(255,214,140,.78);--amb-4:rgba(206,170,255,.55);
   --glass-fill:rgba(255,252,248,.52);--glass-fill-strong:rgba(255,252,249,.66);
-  --glass-fill-soft:rgba(255,252,248,.36);--glass-fill-menu:rgba(255,252,249,.95);
+  --glass-fill-soft:rgba(255,252,248,.36);--glass-fill-menu:rgba(255,252,249,.95);--glass-fill-panel:rgba(255,252,249,.78);--glass-fill-card:rgba(255,255,255,.55);
   --glass-rim:rgba(255,255,255,.68);--glass-rim-inner:rgba(255,255,255,.95);
   --well-fill:rgba(255,251,246,.55);--well-rim:rgba(255,255,255,.72);
   --c-muted:#6f6560;--c-subtle:#3d3733;
@@ -526,7 +528,7 @@ html[data-theme="arcane"]{
   --amb-1:rgba(138,150,182,.72);--amb-2:rgba(186,192,208,.66);
   --amb-3:rgba(160,174,200,.72);--amb-4:rgba(206,200,222,.6);
   --glass-fill:rgba(252,252,253,.52);--glass-fill-strong:rgba(253,253,254,.66);
-  --glass-fill-soft:rgba(252,252,253,.36);--glass-fill-menu:rgba(253,253,254,.95);
+  --glass-fill-soft:rgba(252,252,253,.36);--glass-fill-menu:rgba(253,253,254,.95);--glass-fill-panel:rgba(253,253,254,.78);--glass-fill-card:rgba(255,255,255,.55);
   --glass-rim:rgba(255,255,255,.7);--glass-rim-inner:rgba(255,255,255,.96);
   --well-fill:rgba(250,250,252,.6);--well-rim:rgba(255,255,255,.76);
   --c-muted:#6c6c73;--c-subtle:#3a3a3e;
@@ -538,7 +540,7 @@ html[data-theme="dungeon"]{
   --amb-1:rgba(58,110,255,.75);--amb-2:rgba(140,80,255,.6);
   --amb-3:rgba(0,178,190,.5);--amb-4:rgba(255,96,160,.42);
   --glass-fill:rgba(40,42,56,.42);--glass-fill-strong:rgba(32,34,48,.6);
-  --glass-fill-soft:rgba(40,42,56,.3);--glass-fill-menu:rgba(26,28,40,.97);
+  --glass-fill-soft:rgba(40,42,56,.3);--glass-fill-menu:rgba(26,28,40,.97);--glass-fill-panel:rgba(30,32,44,.7);--glass-fill-card:rgba(255,255,255,.07);
   --glass-rim:rgba(255,255,255,.18);--glass-rim-inner:rgba(255,255,255,.26);
   --glass-shadow:0 16px 48px rgba(0,0,0,.5), 0 2px 10px rgba(0,0,0,.35);
   --glass-shadow-sm:0 8px 24px rgba(0,0,0,.42);
@@ -560,7 +562,7 @@ html[data-theme="dragon"]{
   --amb-1:rgba(48,78,210,.55);--amb-2:rgba(118,58,210,.45);
   --amb-3:rgba(0,142,164,.4);--amb-4:rgba(210,62,124,.32);
   --glass-fill:rgba(30,30,36,.4);--glass-fill-strong:rgba(24,24,30,.58);
-  --glass-fill-soft:rgba(30,30,36,.28);--glass-fill-menu:rgba(18,18,22,.98);
+  --glass-fill-soft:rgba(30,30,36,.28);--glass-fill-menu:rgba(18,18,22,.98);--glass-fill-panel:rgba(22,22,26,.74);--glass-fill-card:rgba(255,255,255,.06);
   --glass-rim:rgba(255,255,255,.14);--glass-rim-inner:rgba(255,255,255,.22);
   --glass-shadow:0 16px 48px rgba(0,0,0,.6), 0 2px 10px rgba(0,0,0,.45);
   --glass-shadow-sm:0 8px 24px rgba(0,0,0,.5);
@@ -600,15 +602,14 @@ html[data-theme="dragon"] #content::-webkit-scrollbar-thumb{
 @media (prefers-reduced-transparency: reduce){
   :root{
     --glass-fill:#ffffff;--glass-fill-strong:#ffffff;--glass-fill-soft:#f5f5f7;
-    --glass-fill-menu:#ffffff;
+    --glass-fill-menu:#ffffff;--glass-fill-panel:#ffffff;--glass-fill-card:#ffffff;
     --glass-rim:rgba(0,0,0,.08);--glass-rim-inner:rgba(0,0,0,0);
     --well-fill:#f5f5f7;--well-rim:rgba(0,0,0,.12);
     --c-hover:#f5f5f7;--c-selected:#e8e8ed;--c-selected-rim:transparent;
   }
-  html[data-theme="dungeon"]{--glass-fill:#1d1d1f;--glass-fill-strong:#1d1d1f;--glass-fill-soft:#161617;--glass-fill-menu:#1d1d1f;--well-fill:#2c2c2e;--c-hover:#2c2c2e;--c-selected:#3a3a3c}
-  html[data-theme="dragon"]{--glass-fill:#000;--glass-fill-strong:#000;--glass-fill-soft:#0a0a0a;--glass-fill-menu:#000;--well-fill:#1c1c1e;--c-hover:#1c1c1e;--c-selected:#2c2c2e}
-  #topbar,#sidebar,#article,#themeMenu,#searchResults,#backTop,
-  #tocHeader,#searchResultsHead,#article blockquote{
+  html[data-theme="dungeon"]{--glass-fill:#1d1d1f;--glass-fill-strong:#1d1d1f;--glass-fill-soft:#161617;--glass-fill-menu:#1d1d1f;--glass-fill-panel:#1d1d1f;--glass-fill-card:#2c2c2e;--well-fill:#2c2c2e;--c-hover:#2c2c2e;--c-selected:#3a3a3c}
+  html[data-theme="dragon"]{--glass-fill:#000;--glass-fill-strong:#000;--glass-fill-soft:#0a0a0a;--glass-fill-menu:#000;--glass-fill-panel:#000;--glass-fill-card:#1c1c1e;--well-fill:#1c1c1e;--c-hover:#1c1c1e;--c-selected:#2c2c2e}
+  #topbar,#themeMenu,#chargenView,#chargenTop,#cgToast,#backTop{
     -webkit-backdrop-filter:none !important;backdrop-filter:none !important;
   }
   body::before{display:none}
