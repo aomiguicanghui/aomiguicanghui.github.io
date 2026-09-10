@@ -1,0 +1,9 @@
+# 工作区内部笔记、验证截图等，不属于站点内容，不应随仓库公开
+# （本仓库是公开仓库，且站点通过 jsDelivr 镜像同一仓库，
+#   被跟踪的文件即使不被 GitHub Pages 提供，也能经 CDN 直接读取）
+.workbuddy/
+
+# 常见临时/系统文件
+.DS_Store
+Thumbs.db
+*.log

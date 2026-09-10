@@ -251,7 +251,15 @@ async function navigate(url, query){
     $$('img', content).forEach(im => makeAbs(im, 'src'));
     $$('a[href]', content).forEach(a => {
       const href = (a.getAttribute('href')||'').trim();
-      if(!href || /^(#|https?:|mailto:|javascript:|data:)/i.test(href)) return;
+      if(!href || /^(#|https?:|mailto:|javascript:|data:)/i.test(href)){
+        // 指向第三方站点的外链：不带 Referer 打开（不向对方暴露读者来源页），
+        // 并阻断 window.opener（防反向标签劫持）。本站与内容 CDN 的链接不受影响。
+        if(/^https?:/i.test(href) && !/^https?:\/\/(aomiguicanghui\.github\.io|cdn\.jsdelivr\.net)\//i.test(href)){
+          a.setAttribute('rel', 'noreferrer noopener');
+          a.setAttribute('referrerpolicy', 'no-referrer');
+        }
+        return;
+      }
       if(/\.(htm|html)$/i.test(href)){ a.dataset.internal = '1'; }
       else addAbs(a, 'href');
     });
@@ -578,7 +586,8 @@ function runSearch(){
       crumb.textContent = r.crumb;
       const snip = document.createElement('div');
       snip.className = 'searchSnippet';
-      snip.innerHTML = mark(esc(snippetFrom(r.text, query)), query);
+      // mark() 内部已做转义，不能再套一层 esc()（否则摘要里的 & < > 会显示成实体）
+      snip.innerHTML = mark(snippetFrom(r.text, query), query);
       a.appendChild(title); a.appendChild(crumb); a.appendChild(snip);
       a.addEventListener('click', e=>{
         e.preventDefault();

@@ -1246,8 +1246,8 @@ function stepSheet(){
     + '<div class="sh-field"><textarea data-field="notes" placeholder="记录扩展规则带来的调整、背景与战役设定…">'+esc(h.notes||'')+'</textarea></div>'
     + '</div></div>'
 
-    + '<div class="cg-footer sh-actions"><button id="cgSaveSheet" class="btn btn-primary" type="button">💾 保存</button>'
-    + '<button id="cgPrintSheet" class="btn" type="button">🖨 打印</button>'
+    + '<div class="cg-footer sh-actions"><button id="cgSaveSheet" class="btn btn-primary" type="button">保存</button>'
+    + '<button id="cgPrintSheet" class="btn" type="button">打印</button>'
     + '<button id="cgRecalc" class="btn" type="button">↺ 按已选规则重算</button></div>';
 
   setTimeout(()=>{
