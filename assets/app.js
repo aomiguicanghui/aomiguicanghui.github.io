@@ -307,7 +307,8 @@ function sanitizeImported(root){
 // 会让站点排版体系和暗色主题完全失效。这里做有选择的剥离与归一：
 // - 删除字体/字号/间距/mso-* 等排版属性，交还给全局样式表
 // - 纯黑文字色 → 删除（继承主题文字色，暗色主题下不再隐形）
-// - 纯红强调色 → 映射为主题 accent 变量（各主题下观感一致）
+// - 纯红强调色 → 删除并保留加粗（Apple 语言中唯一强调色只用于可交互元素，
+//   正文里的强调交给字重表达，避免与链接蓝混淆）
 // - 近白背景色 → 删除（暗色主题下不再出现刺眼的白色块）
 function normalizeContentStyles(root){
   const DROP = /^(font-family|font-size|font|margin|margin-.*|padding|padding-.*|line-height|text-indent|text-autospace|layout-grid.*|mso-.*|tab-interval|letter-spacing|word-spacing)$/i;
@@ -323,8 +324,7 @@ function normalizeContentStyles(root){
     const st = el.style;
     // 颜色归一（先于属性删除，避免被 DROP 误伤——color/background 不在 DROP 中）
     const col = parseRgb(st.color);
-    if(isBlackish(col)) st.removeProperty('color');
-    else if(isReddish(col)) st.setProperty('color', 'var(--c-accent)');
+    if(isBlackish(col) || isReddish(col)) st.removeProperty('color');
     const bg = parseRgb(st.backgroundColor);
     if(isWhitish(bg)) st.removeProperty('background-color');
     // 表格内的内联边框（Word 导出的 windowtext 网格线）一并剥离，交还给书版细线样式
@@ -344,9 +344,11 @@ function normalizeContentStyles(root){
       f.removeAttribute('color');
       const rgb = parseRgb(c);
       const named = String(c).trim().toLowerCase();
-      if(named === 'red' || isReddish(rgb)) f.style.setProperty('color', 'var(--c-accent)');
-      else if(named === 'black' || isBlackish(rgb) || isWhitish(rgb)) { /* 继承主题色 */ }
-      else f.style.setProperty('color', c);
+      if(named === 'red' || isReddish(rgb) || named === 'black' || isBlackish(rgb) || isWhitish(rgb)){
+        /* 交给主题文字色（强调由字重承担） */
+      } else {
+        f.style.setProperty('color', c);
+      }
     }
   });
 }
@@ -540,6 +542,7 @@ function runSearch(){
   const panel = $('#searchResults');
   const list  = $('#searchResultsList');
   const count = $('#searchResultsCount');
+  const time  = $('#searchResultsTime');
   const query = input.value;
   if(!query.trim()){
     panel.setAttribute('hidden','');
@@ -547,6 +550,7 @@ function runSearch(){
   }
   if(!state.indexReady){
     count.textContent = '索引加载中…';
+    time.textContent = '';
     panel.removeAttribute('hidden');
     loadIndex().then(()=>{
       if(state.indexReady && input.value.trim()) runSearch();
@@ -586,7 +590,8 @@ function runSearch(){
       list.appendChild(li);
     }
   }
-  count.textContent = results.length + ' 条结果（'+elapsed+'ms）';
+  count.textContent = results.length + ' 条结果';
+  time.textContent = elapsed + ' ms';
   panel.removeAttribute('hidden');
 }
 
@@ -677,6 +682,15 @@ function init(){
   titleOnly.addEventListener('change', ()=>{ if(input.value.trim()) runSearch(); });
   document.addEventListener('click', e=>{
     if(!e.target.closest('#searchBox') && !e.target.closest('#searchResults')) closeSearch();
+  });
+  // 键盘快捷键：/ 聚焦搜索（Apple 惯例），Esc 已有退出行为
+  document.addEventListener('keydown', e=>{
+    if(e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+    const t = e.target;
+    if(t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    e.preventDefault();
+    input.focus();
+    input.select();
   });
 }
 

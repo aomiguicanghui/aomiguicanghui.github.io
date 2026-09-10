@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>ADND2E扩展不全书</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b2620'/%3E%3Cpath d='M16 4l9 12-9 12L7 16z' fill='none' stroke='%23a8842c' stroke-width='2.4'/%3E%3Cpath d='M16 10l5 6-5 6-5-6z' fill='%23a8842c'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d1d1f'/%3E%3Cpath d='M8.6 9.4h6.1c.6 0 1 .4 1 1v11.5l-7.1-1.9c-.5-.1-.8-.5-.8-1V10.4c0-.6.4-1 .8-1z' fill='%23ffffff'/%3E%3Cpath d='M23.4 9.4h-6.1c-.6 0-1 .4-1 1v11.5l7.1-1.9c.5-.1.8-.5.8-1V10.4c0-.6-.4-1-.8-1z' fill='%23ffffff' opacity='.62'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="assets/app.css">
 <link rel="stylesheet" href="assets/chargen.css">
@@ -19,26 +19,27 @@
     <input id="searchInput" type="search" placeholder="搜索法术、规则、术语…" autocomplete="off">
     <label id="titleOnlyWrap"><input type="checkbox" id="titleOnly"> 仅搜标题</label>
   </div>
-  <button id="chargenBtn" type="button" title="角色创建向导（车卡）" aria-label="角色创建向导">🎲 车卡</button>
+  <button id="chargenBtn" type="button" title="角色创建向导（车卡）" aria-label="角色创建向导">车卡</button>
   <div id="themeWrap">
-    <button id="themeBtn" type="button" aria-label="切换主题" title="切换主题">
-      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M10 2a4 4 0 0 0-4 4c0 1.2.5 2.2 1.4 3l.5.6c.6.7.9 1.5.9 2.4a1 1 0 0 0 2 0c0-.9.3-1.7.9-2.4l.5-.6C13.5 8.2 14 7.2 14 6a4 4 0 0 0-4-4Zm0 9.6c.6-1 1.4-2.2 1.4-3.6a1.4 1.4 0 0 0-2.8 0c0 1.4.8 2.6 1.4 3.6ZM10 18a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
+    <button id="themeBtn" type="button" aria-label="切换外观" title="切换外观">
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M10 3a7 7 0 0 1 0 14z" fill="currentColor"/>
       </svg>
     </button>
     <div id="themeMenu" hidden>
-      <div id="themeMenuTitle">选择主题</div>
-      <button class="theme-opt" data-key="parchment" type="button"><span class="sw"></span>羊皮纸</button>
-      <button class="theme-opt" data-key="elven" type="button"><span class="sw"></span>翠林秘境</button>
-      <button class="theme-opt" data-key="arcane" type="button"><span class="sw"></span>秘蓝法阵</button>
-      <button class="theme-opt" data-key="dungeon" type="button"><span class="sw"></span>黑曜地城</button>
-      <button class="theme-opt" data-key="dragon" type="button"><span class="sw"></span>龙血灰烬</button>
+      <div id="themeMenuTitle">外观</div>
+      <button class="theme-opt" data-key="parchment" type="button"><span class="sw"></span>浅色</button>
+      <button class="theme-opt" data-key="elven" type="button"><span class="sw"></span>珍珠</button>
+      <button class="theme-opt" data-key="arcane" type="button"><span class="sw"></span>石墨</button>
+      <button class="theme-opt" data-key="dungeon" type="button"><span class="sw"></span>午夜</button>
+      <button class="theme-opt" data-key="dragon" type="button"><span class="sw"></span>纯黑</button>
     </div>
   </div>
 </header>
 
 <div id="searchResults" hidden>
-  <div id="searchResultsHead">结果 (<span id="searchResultsCount">0</span>) — <span id="searchResultsTime"></span></div>
+  <div id="searchResultsHead"><span id="searchResultsCount">0</span><span id="searchResultsTime"></span></div>
   <ol id="searchResultsList"></ol>
 </div>
 
@@ -54,18 +55,18 @@
 
 <footer id="altFooter" hidden></footer>
 <div id="sidebarBackdrop"></div>
-<button id="backTop" type="button" title="回到顶部" aria-label="回到顶部"><span>▲</span></button>
+<button id="backTop" type="button" title="回到顶部" aria-label="回到顶部"><span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 16V5M5.2 9.8L10 5l4.8 4.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
 
 <div id="chargenView" hidden>
   <header id="chargenTop">
     <div class="cg-top-left">
-      <button id="chargenBack" type="button" title="返回阅读">←　返回</button>
+      <button id="chargenBack" type="button" title="返回阅读">返回</button>
       <span class="cg-brand">角色创建向导</span>
     </div>
     <div class="cg-top-right">
       <span id="cgStepLabel"></span>
-      <button id="cgSave" type="button" title="保存">💾 保存</button>
-      <button id="cgPrint" type="button" title="打印角色卡">🖨 打印</button>
+      <button id="cgSave" type="button" title="保存">保存</button>
+      <button id="cgPrint" type="button" title="打印角色卡">打印</button>
     </div>
   </header>
   <div id="chargenBody"></div>
