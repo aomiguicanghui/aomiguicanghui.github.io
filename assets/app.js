@@ -107,6 +107,24 @@ function walkToc(els){
 }
 function rowsToc(els){ return walkToc(els); }
 
+// 目录展开/收起的 chevron 图标（细线条，展开时由 CSS 旋转 90°——macOS/iOS 侧栏的做法）
+const SVG_NS = 'http://www.w3.org/2000/svg';
+function chevronIcon(){
+  const svg = document.createElementNS(SVG_NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 20 20');
+  svg.setAttribute('aria-hidden', 'true');
+  svg.setAttribute('focusable', 'false');
+  const p = document.createElementNS(SVG_NS, 'path');
+  p.setAttribute('d', 'M8 5.5L12.5 10 8 14.5');
+  p.setAttribute('fill', 'none');
+  p.setAttribute('stroke', 'currentColor');
+  p.setAttribute('stroke-width', '1.9');
+  p.setAttribute('stroke-linecap', 'round');
+  p.setAttribute('stroke-linejoin', 'round');
+  svg.appendChild(p);
+  return svg;
+}
+
 function buildTocDom(tree, container){
   container.textContent = '';
   const conv = (nodes, parent) => {
@@ -116,13 +134,15 @@ function buildTocDom(tree, container){
       const hasKids = node.children && node.children.length > 0;
       if(hasKids){
         const b = document.createElement('button');
-        b.className = 'toc-toggle'; b.textContent = '▸'; b.type = 'button';
+        b.className = 'toc-toggle'; b.type = 'button';
+        b.setAttribute('aria-label', '展开或收起'); b.setAttribute('aria-expanded', 'false');
+        b.appendChild(chevronIcon());
         b.addEventListener('click', e=>{
           e.stopPropagation();
           const box = row.querySelector(':scope > .toc-children');
           const open = box.classList.toggle('open');
-          b.textContent = open ? '▾' : '▸';
-          b.classList.toggle('open', open);
+          b.classList.toggle('open', open);           // 旋转交由 CSS 处理
+          b.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
         row.appendChild(b);
       } else {
